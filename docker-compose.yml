@@ -1,0 +1,10 @@
+version: "3"
+services:
+    django:
+        build: .
+        image: django-pytest-examples
+        container_name: django_pytest_examples
+        ports:
+            - 8080:8000
+        volumes:
+            - ./testing_examples:/var/www/django-pytest
